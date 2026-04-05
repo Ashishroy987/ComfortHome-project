@@ -1,0 +1,90 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.9);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🔥 PREMIUM DARK BACKGROUND */
+body {
+  margin: 0;
+  padding: 0;
+
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(120, 90, 255, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0, 200, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(255, 0, 150, 0.10), transparent 40%),
+    linear-gradient(135deg, #0a0a0f, #0f172a);
+
+  min-width: 320px;
+  min-height: 100vh;
+  color: white;
+}
+
+/* REMOVE center alignment (this was breaking your layout) */
+#root {
+  width: 100%;
+}
+
+/* LINKS */
+a {
+  font-weight: 500;
+  color: #8ab4ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #a5b4fc;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+/* BUTTONS (modern look) */
+button {
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+
+  background: rgba(255,255,255,0.05);
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+button:hover {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.2);
+}
+
+/* LIGHT MODE (optional fallback) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: #ffffff;
+  }
+
+  body {
+    background: #ffffff;
+    color: #213547;
+  }
+
+  button {
+    background-color: #f3f4f6;
+    color: #111;
+  }
+}

@@ -1,0 +1,127 @@
+/* ===== ROOT FIX (REMOVE WHITE BOX) ===== */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* ===== LOGO (UNCHANGED) ===== */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ===== CARD (MAIN FIX) ===== */
+.card {
+  background: rgba(20, 20, 30, 0.75); /* darker glass */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ===== TEXT VISIBILITY FIX ===== */
+.card-body {
+  color: white;
+}
+
+.card-title,
+.card-text {
+  color: white !important;
+}
+
+.card-body p,
+.card-body h5 {
+  color: white !important;
+}
+
+/* muted text */
+.text-muted {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* ===== IMAGE FIX ===== */
+.card-img-top {
+  filter: brightness(0.7);
+}
+
+/* ===== BUTTON IMPROVEMENT (MINIMAL) ===== */
+button {
+  border-radius: 10px;
+}
+
+/* ===== KEEP EXISTING ===== */
+.read-the-docs {
+  color: #888;
+}
+
+
+
+/* ===== REVIEW SECTION FIX ===== */
+
+/* headings */
+h4, h5, label {
+  color: white !important;
+}
+
+/* form inputs */
+.form-control {
+  background: rgba(255,255,255,0.08) !important;
+  color: white !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+/* placeholder text */
+.form-control::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* select dropdown */
+select.form-control {
+  color: white !important;
+}
+
+/* textarea */
+textarea.form-control {
+  color: white !important;
+}
+
+/* review cards */
+.card .card-body h6,
+.card .card-body p {
+  color: white !important;
+}
+
+/* ===== NO REVIEWS TEXT FIX ===== */
+.card p {
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  margin-top: 10px;
+}
